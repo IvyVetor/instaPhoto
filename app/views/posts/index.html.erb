@@ -12,7 +12,10 @@
   <tbody>
     <% @posts.each do |post| %>
       <tr>
-        <td colspan="3"><%= image_tag post.image, size: "200" %></td></br>
+        <td colspan="3"><%= image_tag post.image, size: '400' %></td>
+      </tr>
+      <tr>
+        <td colspan="3"><%= post.caption %></td>
       </tr>
       <tr>
         <td><%= link_to 'Show', post %></td>
