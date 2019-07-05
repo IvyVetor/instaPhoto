@@ -32,6 +32,7 @@ gem 'mini_magick', '~> 4.8'
 gem "aws-sdk-s3", require: false
 
 gem 'simple_form'
+gem 'bootstrap-sass'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
