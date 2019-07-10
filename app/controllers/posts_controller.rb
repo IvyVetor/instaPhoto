@@ -26,7 +26,7 @@ class PostsController < ApplicationController
   # POST /posts.json
   def create
     post = Post.create!(post_params)
-    post.image.attach(params[:image])
+    post.image.attach(params[:post][:image])
 
     # respond_to do |format|
     #   if @post.save
