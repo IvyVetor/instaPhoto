@@ -2,30 +2,6 @@
 
 <h1>Posts</h1>
 
-<!-- <table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @posts.each do |post| %>
-      <tr>
-        <td colspan="3"><%= image_tag post.image, size: '400' %></td>
-      </tr>
-      <tr>
-        <td colspan="3"><%= post.caption %></td>
-      </tr>
-      <tr>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table> -->
-
 <div class="posts-wrapper row">
   <% @posts.each do |post| %>
     <div class="post">
@@ -35,7 +11,7 @@
         </div>
       </div>
       <div class="image center-block">
-        <%= link_to (image_tag post.image, size: '400vw', class:'img-responsive'), post_path(post) %>
+        <%= link_to (image_tag post.image, size: '500', class:'img-responsive'), post_path(post) %>
       </div>
       <p class="caption">
         <%= post.caption %>
